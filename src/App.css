@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.App {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.puppies-list {
+    width: 50%;
+}
+
+.puppy-item {
+    cursor: pointer;
+    color: rgb(229, 229, 229);
+    padding: 10px;
+    margin: 5px;
+    background-color: #1d4575;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #a0c6f4;
+        color: #312c2c;
+    }
+}
+
+.featured-puppy {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.featured-puppy h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.featured-puppy ul {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-puppy li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 580px) {
+    .App {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .puppies-list {
+        margin-bottom: 2rem;
+    }
+    .puppies-list {
+        width: 80%;
+    }
+    .featured-puppy {
+        width: 80%;
+    }
+}
